@@ -137,12 +137,12 @@
 
         .hero-main {
             display: grid;
-            grid-template-columns: minmax(0, 1fr);
+            grid-template-columns: minmax(0, 1fr) minmax(200px, 220px);
             grid-template-areas:
-                "copy"
-                "lede"
-                "actions";
-            gap: 16px;
+                "copy photo"
+                "lede photo"
+                "actions actions";
+            gap: 18px 18px;
             align-items: start;
             min-width: 0;
         }
@@ -243,6 +243,26 @@
             font-weight: 800;
             box-shadow: var(--pill-shadow-light);
             transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+        }
+
+        .hero-photo {
+            grid-area: photo;
+            margin: 0;
+            padding: 12px;
+            border: 1px solid var(--line-strong);
+            border-radius: 26px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(249, 240, 228, 0.96));
+            box-shadow: 0 18px 40px rgba(15, 31, 45, 0.1);
+        }
+
+        .hero-photo img {
+            width: 100%;
+            display: block;
+            aspect-ratio: 4 / 5;
+            border-radius: 18px;
+            object-fit: cover;
+            object-position: center 22%;
+            border: 1px solid rgba(15, 31, 45, 0.12);
         }
 
         .contact-list,
@@ -794,6 +814,10 @@
                 align-items: stretch;
             }
 
+            .hero-photo {
+                max-width: 360px;
+            }
+
             .hero-proof {
                 flex-direction: column;
             }
@@ -834,11 +858,6 @@
                 print-color-adjust: exact;
             }
 
-            body {
-                background: #fff;
-            }
-
-            body::before,
             .skip-link {
                 display: none;
             }
@@ -846,66 +865,6 @@
             .page-shell {
                 width: 100%;
                 padding: 0;
-            }
-
-            body {
-                font-size: 11pt;
-            }
-
-            h1 {
-                font-size: 2.9rem;
-            }
-
-            h2 {
-                font-size: 1.9rem;
-            }
-
-            *,
-            *::before,
-            *::after {
-                animation: none !important;
-                transition: none !important;
-                transform: none !important;
-                opacity: 1 !important;
-            }
-
-            main {
-                gap: 16px;
-                margin-top: 16px;
-            }
-
-            .hero,
-            .section-card,
-            .focus-box,
-            .resume-card,
-            .project-card,
-            .education-card,
-            .closing-card {
-                box-shadow: none;
-            }
-
-            .hero,
-            .section-card {
-                padding: 22px;
-            }
-
-            .project-card,
-            .resume-card,
-            .education-card,
-            .closing-card {
-                padding: 14px;
-            }
-
-            .summary-grid {
-                grid-template-columns: minmax(0, 1.15fr) minmax(250px, 0.85fr) !important;
-            }
-
-            .capability-grid,
-            .resume-grid,
-            .portfolio-grid,
-            .education-grid,
-            .closing-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
             }
 
             .hero,
@@ -939,27 +898,6 @@
                 margin-bottom: 16px;
             }
 
-            .hero-lede,
-            .section-note,
-            .project-card p,
-            .resume-card p,
-            .education-card p,
-            .closing-card p {
-                font-size: 0.96rem;
-            }
-
-            .project-type,
-            .resume-card .resume-role,
-            .kicker,
-            .eyebrow {
-                font-size: 0.74rem;
-            }
-
-            .project-cta,
-            .contact-pill {
-                font-size: 0.85rem;
-            }
-
             a {
                 text-decoration: none;
             }
@@ -976,6 +914,9 @@
                     <p class="eyebrow">Currículo | Web Designer</p>
                     <h1 id="nome-profissional">Leonardo Teodoro Laureano</h1>
                 </div>
+                <figure class="hero-photo" aria-label="Foto de Leonardo Teodoro Laureano">
+                    <img src="assets/profile/leonardo-hero.jpg" alt="Foto de Leonardo Teodoro Laureano">
+                </figure>
                 <p class="hero-lede">
                     Crio <strong>landing pages, páginas promocionais e apresentações web com hierarquia visual forte, contraste limpo e leitura orientada à ação</strong>.
                     Minha atuação vai do briefing ao deploy final, unindo copywriting, organização de conteúdo e acabamento responsivo para entregar páginas mais claras,
