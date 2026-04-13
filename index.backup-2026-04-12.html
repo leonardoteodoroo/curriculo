@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo Teodoro | Engenharia & Estratégia</title>
+    <meta name="description" content="Currículo profissional de Leonardo Teodoro - Engenheiro de Computação especializado em Automação e Copywriting.">
+    
+    <!-- Tipografia Moderna -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg: #0a0a0c;
+            --surface: #16161a;
+            --primary: #9d50bb;
+            --secondary: #6e48aa;
+            --accent: #00d2ff;
+            --text-main: #e2e2e6;
+            --text-dim: #a9a9b3;
+            --glass: rgba(255, 255, 255, 0.03);
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Ambient Background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: -10%;
+            right: -10%;
+            width: 50vw;
+            height: 50vw;
+            background: radial-gradient(circle, rgba(157, 80, 187, 0.15) 0%, transparent 70%);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header / Hero */
+        header {
+            text-align: center;
+            margin-bottom: 80px;
+            padding: 60px 20px;
+            background: var(--glass);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 15px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 30px;
+        }
+
+        /* Seções */
+        section {
+            margin-bottom: 60px;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: #fff;
+        }
+
+        h2::after {
+            content: '';
+            height: 1px;
+            flex-grow: 1;
+            background: linear-gradient(to right, var(--border), transparent);
+        }
+
+        /* Grid de Cards */
+        .experience-grid {
+            display: grid;
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--surface);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.01);
+            border-color: var(--primary);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary), var(--secondary));
+            opacity: 0.7;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .job-title {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        .company {
+            color: var(--accent);
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .period {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            background: rgba(255,255,255,0.05);
+            padding: 4px 12px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+        }
+
+        .card-content {
+            color: var(--text-dim);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        /* Skills Tags */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill-tag {
+            background: var(--glass);
+            border: 1px solid var(--border);
+            padding: 10px 22px;
+            border-radius: 14px;
+            font-size: 0.95rem;
+            transition: 0.3s;
+            cursor: default;
+        }
+
+        .skill-tag:hover {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: #fff;
+            border-color: transparent;
+            transform: scale(1.05);
+        }
+
+        /* Projetos linkados */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .project-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .project-card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .external-icon {
+            font-size: 0.8rem;
+            opacity: 0.6;
+            margin-left: 5px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 100px;
+            padding: 60px 40px;
+            border-top: 1px solid var(--border);
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
+        /* Scrollbar Custom */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg); }
+        ::-webkit-scrollbar-thumb { background: var(--surface); border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--primary); }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.8rem; }
+            .subtitle { font-size: 0.9rem; letter-spacing: 2px; }
+            .card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER / HERO -->
+        <header id="heroSection">
+            <div class="subtitle">Engenharia de Computação & Estratégia Digital</div>
+            <h1>Leonardo Teodoro</h1>
+            <div class="contact-info">
+                <div class="contact-item">📍 Goiânia, GO</div>
+                <div class="contact-item">📧 lauteodor@gmail.com</div>
+                <div class="contact-item">📱 (62) 99918-7023</div>
+            </div>
+        </header>
+
+        <!-- SOBRE (Copywriting & Posicionamento) -->
+        <section id="apresentacao">
+            <h2>Estratégia Profissional</h2>
+            <div class="card">
+                <p class="card-content">
+                    Graduando em Engenharia da Computação com perfil analítico focado em **Automação, Copywriting e Arquitetura de Sistemas**. Especialista em unir soluções de infraestrutura técnica com estratégias de persuasão para maximizar a conversão e eficiência de produtos digitais. Com trajetórias em liderança operacional e suporte técnico VIP, possuo a habilidade de traduzir desafios complexos de engenharia em resultados práticos de negócio.
+                </p>
+            </div>
+        </section>
+
+        <!-- SKILLS (Stack Técnica) -->
+        <section id="stack">
+            <h2>Especialidades</h2>
+            <div class="skills-container">
+                <div class="skill-tag">Automação de Agentes AI</div>
+                <div class="skill-tag">Desenvolvimento Web (React/Next.js)</div>
+                <div class="skill-tag">Copywriting de Alta Conversão</div>
+                <div class="skill-tag">Programação em C++</div>
+                <div class="skill-tag">Arquitetura de Prompt (LLMs)</div>
+                <div class="skill-tag">Suporte Técnico VIP (Help Desk)</div>
+                <div class="skill-tag">Liderança Operacional & Logística</div>
+                <div class="skill-tag">Gestão de Levantamento Patrimonial</div>
+                <div class="skill-tag">Vendas & Negociação Premium</div>
+                <div class="skill-tag">Treinamento & Didática</div>
+            </div>
+        </section>
+
+        <!-- EXPERIÊNCIA (Narrativa de Alto Valor) -->
+        <section id="trajetoria">
+            <h2>Experiência de Impacto</h2>
+            <div class="experience-grid">
+                
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <div class="job-title">Liderança Operacional & Subgerência</div>
+                            <div class="company">Rede Isaura - Gestão de Varejo</div>
+                        </div>
+                        <div class="period">2018 - 2021</div>
+                    </div>
+                    <div class="card-content">
+                        Gestão de 360º de equipes operacionais (Logística, Produção e Atendimento). Implementação de auditorias ativas em mercadorias e fluxo de fechamento financeiro, o que gerou estabilidade do piso operacional e estancou potenciais furos no fluxo de caixa.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <div class="job-title">Coordenação de Levantamento Patrimonial</div>
+                            <div class="company">COMDATA - Paço Municipal</div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        Liderei análises lógicas de bases de dados físicas e digitais em escala municipal. Atuei com curadoria, classificação minuciosa e conferência de grandes massas de ativos, assegurando governança impecável da conformidade patrimonial do governo.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <div class="job-title">Supervisor Fiscal e Conformidade</div>
+                            <div class="company">Metrobus S/A</div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        Monitoramento in-loco em processos de sistemas escaláveis de transporte. Assegurei cumprimento 100% à risca de exigências normais garantindo a otimização de rotas críticas da logística urbana da cidade sob imensa pressão operacional.
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <div class="job-title">Consultor de Vendas & Customer Success</div>
+                            <div class="company">FastShop Flamboyant</div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        Domínio puro das técnicas de vendas aliando "copy verbal" em um contexto de Varejo High-end. Foco estratégico na conversão de leads frios em clientes fieis e alto ticket recorrente prestando consultoria premium em equipamentos e tech gadgets.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <div class="job-title">Analista Help Desk VIP & Back Office</div>
+                            <div class="company">Bt Call Center</div>
+                        </div>
+                        <div class="period">2015 - 2017</div>
+                    </div>
+                    <div class="card-content">
+                        Suporte ultra rápido (SLA) para hardwares de redes corporativas. Traduzi a dor técnica dos usuários num diagnóstico sistemático acelerando o retorno das instabilidades geradas por falha de rotas conectivas nas infraestruturas do servidor e endpoints.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <div class="job-title">Instrutor de Informática/Exatas & Administrativo</div>
+                            <div class="company">Escola SESI Jardim Planalto</div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        Transmutei tópicos tidos como complexos (TI e Matemática Avançada) em pílulas didáticas simples de consumir. Também garanti o funcionamento de processos das instâncias administrativas documentando e orquestrando o backoffice educacional da filial.
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <div class="job-title">Assistente de Logística Ativa</div>
+                            <div class="company">Yellow Soluções Mobilidade Ltda.</div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        Manobra rápida no escoamento e operação contínua. Resolvi dores diárias dinâmicas relativas a rotas de abastecimento local e suporte operacional on-field (na rua).
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROJETOS REAIS (Matchmaking com a Base de Projetos) -->
+        <section id="portfolioApps">
+            <h2>Ecossistema em Operação</h2>
+            <div class="projects-grid">
+                <a href="https://comolotarsuaagenda.semprenamoda.com.br" class="project-link" target="_blank">
+                    <div class="card project-card">
+                        <div>
+                            <div class="job-title">Como Lotar Sua Agenda</div>
+                            <p class="card-content" style="margin-top:10px">Landing Page com arquitetura de conversão aplicada para prestadores de serviços. <span class="external-icon">↗</span></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://calistenia-sob-medida.semprenamoda.com.br" class="project-link" target="_blank">
+                    <div class="card project-card">
+                        <div>
+                            <div class="job-title">Calistenia Sob Medida</div>
+                            <p class="card-content" style="margin-top:10px">Ecossistema de fitness digital com integração de planos e engajamento. <span class="external-icon">↗</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- EDUCAÇÃO E CONTINUING EDUCATION -->
+        <section id="formacaoAcademica">
+            <h2>Educação & Especializações</h2>
+            <div class="experience-grid">
+                <div class="card">
+                    <div class="job-title">Engenharia da Computação</div>
+                    <div class="company">PUC Goiás (Graduando - 7º Período)</div>
+                    <p class="card-content" style="margin-top:5px; font-size:0.9rem">Foco técnico em Sistemas Embarcados, Redes de Computadores e Desenvolvimento de Software lógico. <i>(Atualmente trancado)</i></p>
+                </div>
+                
+                <div class="card">
+                    <div class="job-title">Certificações & Soft-Skills</div>
+                    <div class="company">SESI & Instituições de Ensino</div>
+                    <div class="skills-container" style="margin-top:15px;">
+                        <div class="skill-tag" style="background: rgba(255,255,255,0.02); font-size:0.8rem; padding: 5px 12px">Liderança e Gestão de Equipes (SESI)</div>
+                        <div class="skill-tag" style="background: rgba(255,255,255,0.02); font-size:0.8rem; padding: 5px 12px">Métodos de Pesquisa</div>
+                        <div class="skill-tag" style="background: rgba(255,255,255,0.02); font-size:0.8rem; padding: 5px 12px">Novas Regras da Língua Portuguesa</div>
+                        <div class="skill-tag" style="background: rgba(255,255,255,0.02); font-size:0.8rem; padding: 5px 12px">Inglês Instrumental / Leitura</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            Leonardo Teodoro &bull; 2026 &bull; Desenvolvido com Antigravity Agent Intelligence
+        </footer>
+    </div>
+
+</body>
+</html>
