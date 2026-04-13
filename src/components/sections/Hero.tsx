@@ -1,42 +1,63 @@
 import React from 'react';
 import { Button } from '../ui/Button';
 import styles from './Hero.module.css';
-import { Badge } from '../ui/Badge';
 import perfilImg from '../../assets/perfil.jpg';
 
 export function Hero() {
   return (
     <section className={styles.heroSection} aria-label="Apresentação Pessoal">
       <div className={`container ${styles.heroGrid}`}>
-        
-        {/* Na versão mobile as ordens podem inverter, no desktop a copy vem primeiro. */}
+
+        {/* Copy principal — ocupa o lado esquerdo no desktop */}
         <div className={styles.heroCopy}>
           <div>
-            <span className={styles.eyebrow}>Engenharia de Computação & Estratégia Digital</span>
+            {/* Eyebrow: nicho claro para recrutador scanear em 3 segundos */}
+            <span className={styles.eyebrow}>Web Designer · UX/UI · Landing Pages</span>
             <h1 className={styles.title}>Leonardo Teodoro</h1>
           </div>
-          
+
+          {/* Subtítulo: proposta de valor focada no que o contratante ganha */}
           <p className={styles.subtitle}>
-            Graduando em Engenharia da Computação com perfil analítico focado em Automação, Copywriting e Arquitetura de Sistemas. Especialista em unir soluções de infraestrutura técnica com estratégias de persuasão para maximizar a conversão e eficiência de produtos digitais. Com trajetórias em liderança operacional e suporte técnico VIP, possuo a habilidade de traduzir desafios complexos em resultados práticos de negócio.
+            Criador de interfaces que vendem. Combino senso estético apurado com
+            raciocínio técnico (Engenharia da Computação) para transformar briefings
+            em páginas que convertem — do wireframe ao código limpo em HTML, CSS e React.
+            Ativo em Goiânia e disponível para projetos remotos.
           </p>
-          
+
+          {/* Bloco de contato visível — essencial para HR */}
+          <div className={styles.contactStrip}>
+            <a href="tel:+5562999918702" className={styles.contactItem} aria-label="Ligar para Leonardo">
+              {/* Ícone de telefone SVG inline para evitar dependência externa */}
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9a16 16 0 0 0 6 6l.72-.72a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 17z"/></svg>
+              (62) 9 9991-8702
+            </a>
+            <a href="mailto:lauteodor@gmail.com" className={styles.contactItem} aria-label="Enviar e-mail para Leonardo">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              lauteodor@gmail.com
+            </a>
+            <span className={styles.contactItem}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Goiânia – GO
+            </span>
+          </div>
+
           <div className={styles.actions}>
             <Button variant="primary" asChild>
               <a href="#projetos">Ver Projetos</a>
             </Button>
             <Button variant="outline" asChild>
-              <a href="mailto:lauteodor@gmail.com">Entrar em contato</a>
+              <a href="#trajetoria">Minha Trajetória</a>
             </Button>
           </div>
         </div>
 
+        {/* Foto de perfil */}
         <div className={styles.photoWrapper}>
-          <img 
-            src={perfilImg} 
-            alt="Leonardo Teodoro sorrindo, foto profissional com estilo limpo"
+          <img
+            src={perfilImg}
+            alt="Leonardo Teodoro, Web Designer em Goiânia"
             className={styles.photo}
             loading="eager"
-            aria-hidden="false"
           />
         </div>
 

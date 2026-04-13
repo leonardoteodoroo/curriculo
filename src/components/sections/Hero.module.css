@@ -40,10 +40,37 @@
   max-width: 90%;
 }
 
+/* Faixa de contato rápido no Hero */
+.contactStrip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4) var(--space-6);
+  align-items: center;
+  padding: var(--space-3) var(--space-4);
+  background: #f1f5f9;
+  border-radius: var(--radius-lg);
+  border: var(--border-subtle);
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contactItem:hover {
+  color: var(--accent-primary);
+}
+
 .actions {
   display: flex;
   gap: var(--space-4);
-  margin-top: var(--space-6);
+  margin-top: var(--space-2);
   flex-wrap: wrap;
 }
 

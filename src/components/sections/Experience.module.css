@@ -83,3 +83,27 @@
   font-size: 0.95rem;
   line-height: 1.6;
 }
+
+/* Lista de informações adicionais com checkmarks */
+.additionalList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-3) var(--space-6);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.additionalItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  padding: var(--space-3) var(--space-4);
+  background: var(--surface-color);
+  border-radius: var(--radius-md);
+  border: var(--border-subtle);
+}

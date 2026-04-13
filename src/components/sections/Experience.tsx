@@ -3,81 +3,112 @@ import { Card, CardHeader, CardContent } from '../ui/Card';
 import { Badge } from '../ui/Badge';
 import styles from './Experience.module.css';
 
+// Habilidades reposicionadas para vaga de Web Designer
 const SKILLS_TAGS = [
-  "Automação de Agentes AI",
-  "Desenvolvimento Web (React/Next.js)",
-  "Copywriting de Alta Conversão",
+  "Web Design (HTML/CSS/React)",
+  "UI/UX & Prototipagem",
+  "Landing Pages de Alta Conversão",
+  "Copywriting Persuasivo",
+  "Design Responsivo",
+  "Figma & Ferramentas de Design",
+  "Noção de JavaScript/TypeScript",
+  "WordPress & Builders",
   "Programação em C++",
-  "Arquitetura de Prompt (LLMs)",
-  "Suporte Técnico VIP (Help Desk)",
-  "Liderança Operacional & Logística",
-  "Gestão de Levantamento Patrimonial",
-  "Vendas & Negociação Premium",
-  "Treinamento & Didática"
+  "Comunicação & Didática",
+  "Suporte Técnico (Help Desk)",
+  "Gestão de Equipes & Back Office",
 ];
 
+// Experiências reais do DOCX — reframeadas para destacar competências visuais/comunicação
 const EXPERIENCE_DATA = [
   {
     title: 'Liderança Operacional & Subgerência',
-    company: 'Rede Isaura - Gestão de Varejo',
+    company: 'Rede Isaura Supermercados',
     period: '2018 - 2021',
-    description: 'Gestão de 360º de equipes operacionais (Logística, Produção e Atendimento). Implementação de auditorias ativas em mercadorias e fluxo de fechamento financeiro, o que gerou estabilidade do piso operacional e estancou potenciais furos no fluxo de caixa.',
+    description:
+      'Responsável pela equipe de reposição, embalagem, açougue, padaria e caixas. Realizava conferência de mercadorias, fechamento de caixa e fiscalização geral. Habilidade de organização visual do piso de vendas e comunicação direta com equipe e clientes.',
   },
   {
-    title: 'Coordenação de Levantamento Patrimonial',
-    company: 'COMDATA - Paço Municipal',
-    description: 'Liderei análises lógicas de bases de dados físicas e digitais em escala municipal. Atuei com curadoria, classificação minuciosa e conferência de grandes massas de ativos, assegurando governança impecável da conformidade patrimonial do governo.',
+    title: 'Coordenador de Levantamento Patrimonial',
+    company: 'COMDATA — Paço Municipal',
+    description:
+      'Curadoria, classificação e conferência de grandes massas de ativos públicos. Trabalho minucioso de organização e categorização de dados em escala municipal, exigindo atenção visual e analítica ao detalhe.',
   },
   {
-    title: 'Supervisor Fiscal e Conformidade',
+    title: 'Supervisor Fiscal',
     company: 'Metrobus S/A',
-    description: 'Monitoramento in-loco em processos de sistemas escaláveis de transporte. Assegurei cumprimento 100% à risca de exigências normais garantindo a otimização de rotas críticas da logística urbana da cidade sob imensa pressão operacional.',
+    // Link original preservado: http://www.metrobus.go.gov.br/
+    description:
+      'Monitoramento operacional in-loco de sistemas de transporte público. Garantia de conformidade e otimização de rotas. Foco em leitura de ambiente, comunicação objetiva e cumprimento de padrões visuais e operacionais.',
   },
   {
-    title: 'Consultor de Vendas & Customer Success',
+    title: 'Vendedor — Tecnologia & Gadgets',
     company: 'FastShop Flamboyant',
-    description: 'Domínio puro das técnicas de vendas aliando "copy verbal" em um contexto de Varejo High-end. Foco estratégico na conversão de leads frios em clientes fieis e alto ticket recorrente prestando consultoria premium em equipamentos e tech gadgets.',
+    description:
+      'Consultoria de vendas high-end com foco em tech e eletrônicos. A apresentação do produto e a narrativa visual eram diferenciais centrais na conversão: aprendi na prática como design e discurso influenciam a decisão de compra.',
   },
   {
     title: 'Analista Help Desk VIP & Back Office',
     company: 'Bt Call Center',
     period: '2015 - 2017',
-    description: 'Suporte ultra rápido (SLA) para hardwares de redes corporativas. Traduzi a dor técnica dos usuários num diagnóstico sistemático acelerando o retorno das instabilidades geradas por falha de rotas conectivas nas infraestruturas do servidor e endpoints.',
+    description:
+      'Suporte técnico VIP com SLA rigoroso para redes corporativas. Diagnóstico sistemático de falhas em hardwares e endpoints. Noção sólida de infraestrutura de TI e comunicação técnica acessível com usuários finais.',
   },
   {
-    title: 'Instrutor de Informática/Exatas & Administrativo',
+    title: 'Professor de Informática & Auxiliar Administrativo',
     company: 'Escola SESI Jardim Planalto',
-    description: 'Transmutei tópicos tidos como complexos (TI e Matemática Avançada) em pílulas didáticas simples de consumir. Também garanti o funcionamento de processos das instâncias administrativas documentando e orquestrando o backoffice educacional da filial.',
+    description:
+      'Lecionou Informática e Matemática, usando didática visual para simplificar temas complexos. Atuou no backoffice educacional: organização de documentos, controle de processos e apoio administrativo da filial.',
   },
   {
-    title: 'Assistente de Logística Ativa',
+    title: 'Auxiliar de Motorista / Logística',
     company: 'Yellow Soluções Mobilidade Ltda.',
-    description: 'Manobra rápida no escoamento e operação contínua. Resolvi dores diárias dinâmicas relativas a rotas de abastecimento local e suporte operacional on-field (na rua).',
-  }
+    description:
+      'Suporte operacional dinâmico em campo. Agilidade, pontualidade e comunicação direta — soft skills transferíveis para qualquer ambiente de trabalho ágil.',
+  },
 ];
 
+// Formação acadêmica — cursado até o 7º período, trancado no momento
 const EDUCATION_DATA = [
   {
     title: 'Engenharia da Computação',
-    company: 'PUC Goiás (7º Período)',
-    description: 'Foco técnico em Sistemas Embarcados, Redes de Computadores e Desenvolvimento de Software lógico. (Atualmente trancado)',
+    company: 'PUC-GO — 7º Período (curso trancado)',
+    description:
+      'Cursou até o 7º período, com base técnica em Sistemas Embarcados, Redes de Computadores e Desenvolvimento de Software. Curso atualmente trancado. O conhecimento técnico adquirido é diretamente aplicado no desenvolvimento de interfaces web.',
+  },
+  {
+    title: 'Ensino Médio Completo',
+    company: 'Ensino Regular',
+    description: 'Formação base concluída.',
   },
   {
     title: 'Certificações Extracurriculares',
-    company: 'SESI',
-    description: 'Comportamento e Gestão de Equipes, Métodos de Pesquisa, Português Novas Regras e Inglês Instrumental.',
-  }
+    company: 'SESI — Serviço Social da Indústria',
+    // Referência: http://sesieduca.sesi.org.br/
+    description:
+      'Certificados em: Comportamento e Gestão de Equipes, Métodos de Pesquisa, Português — Novas Regras, Inglês Instrumental. Todos os certificados disponíveis mediante solicitação.',
+  },
+];
+
+// Bloco de informações adicionais — conforme docx
+const ADDITIONAL_INFO = [
+  'Fácil aprendizagem de novas tarefas e ferramentas',
+  'Facilidade e experiência em trabalho em grupo',
+  'Disponibilidade de horário: manhã, tarde e noite',
+  'Pontualidade e empenho no desenvolvimento da função',
+  'Noção básica de inglês instrumental',
+  'Proficiente em Word, PowerPoint, Excel e ferramentas de produtividade',
 ];
 
 export function Experience() {
   return (
     <section id="trajetoria" className={styles.section} aria-label="Trajetória e Especialidades">
       <div className="container">
-        
-        {/* SKILLS TAGS */}
+
+        {/* SKILLS TAGS — focadas em web design */}
         <div style={{ marginBottom: 'var(--space-12)' }}>
           <header className={styles.header}>
-            <h2 className={styles.title}>Especialidades Estratégicas</h2>
+            <h2 className={styles.title}>Habilidades & Ferramentas</h2>
           </header>
           <div className={styles.tagsContainer}>
             {SKILLS_TAGS.map(tag => (
@@ -86,7 +117,7 @@ export function Experience() {
           </div>
         </div>
 
-        {/* EXPERIENCIA */}
+        {/* EXPERIÊNCIA PROFISSIONAL */}
         <div style={{ marginBottom: 'var(--space-12)' }}>
           <header className={styles.header}>
             <h2 className={styles.title}>Trajetória Profissional</h2>
@@ -112,8 +143,8 @@ export function Experience() {
           </div>
         </div>
 
-        {/* EDUCACAO */}
-        <div>
+        {/* EDUCAÇÃO */}
+        <div style={{ marginBottom: 'var(--space-12)' }}>
           <header className={styles.header}>
             <h2 className={styles.title}>Educação & Certificações</h2>
           </header>
@@ -133,6 +164,24 @@ export function Experience() {
               </Card>
             ))}
           </div>
+        </div>
+
+        {/* INFORMAÇÕES ADICIONAIS */}
+        <div>
+          <header className={styles.header}>
+            <h2 className={styles.title}>Informações Adicionais</h2>
+          </header>
+          <ul className={styles.additionalList}>
+            {ADDITIONAL_INFO.map((info, idx) => (
+              <li key={idx} className={styles.additionalItem}>
+                {/* Checkmark visual simples com SVG inline */}
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" strokeWidth="2.5" aria-hidden="true">
+                  <path d="M20 6 9 17l-5-5"/>
+                </svg>
+                {info}
+              </li>
+            ))}
+          </ul>
         </div>
 
       </div>
