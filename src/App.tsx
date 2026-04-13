@@ -1,6 +1,6 @@
 import React from 'react';
 import { Hero } from './components/sections/Hero';
-import { Skills } from './components/sections/Skills';
+import { Experience } from './components/sections/Experience';
 import { ProjectShowcase } from './components/sections/ProjectShowcase';
 
 function App() {
@@ -8,13 +8,13 @@ function App() {
     <>
       <main>
         <Hero />
-        <Skills />
+        <Experience />
         <ProjectShowcase />
       </main>
       
       <footer style={{ textAlign: 'center', padding: 'var(--space-8) 0', color: 'var(--text-muted)' }}>
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} Leonardo Teodoro Laureano. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Leonardo Teodoro. Todos os direitos reservados.</p>
         </div>
       </footer>
     </>

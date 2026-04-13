@@ -16,28 +16,20 @@ interface Project {
 
 const PROJECTS_DATA: Project[] = [
   {
-    id: '1',
-    title: 'E-commerce React Moderno',
-    description: 'Interface de loja virtual com carrinho de compras, checkout otimizado e painel administrativo.',
-    image: '/assets/eu.png', // Usando placehoder da imagem por enquanto
-    tags: ['React', 'TypeScript', 'WCAG 2.2'],
-    liveUrl: '#',
+    id: 'lotar-agenda',
+    title: 'Como Lotar Sua Agenda',
+    description: 'Landing Page com arquitetura de conversão aplicada para prestadores de serviços.',
+    image: '/assets/perfil.jpg', // Temporário, sugerir prints depois
+    tags: ['Landing Page', 'Conversão', 'UX/UI'],
+    liveUrl: 'https://comolotarsuaagenda.semprenamoda.com.br',
   },
   {
-    id: '2',
-    title: 'Landing Page Advocacia',
-    description: 'Página de alta conversão para escritório de advocacia com formulário multi-step e prova social.',
-    image: '/assets/eu.png',
-    tags: ['HTML5', 'CSS3', 'Design System'],
-    liveUrl: '#',
-  },
-  {
-    id: '3',
-    title: 'Dashboard Analítico',
-    description: 'Dashboard para visualização de métricas de marketing com gráficos interativos e dark mode.',
-    image: '/assets/eu.png',
-    tags: ['UI/UX', 'Vite', 'Recharts'],
-    liveUrl: '#',
+    id: 'calistenia',
+    title: 'Calistenia Sob Medida',
+    description: 'Ecossistema de fitness digital com integração de planos e engajamento.',
+    image: '/assets/perfil.jpg',
+    tags: ['Ecossistema Digital', 'Integração'],
+    liveUrl: 'https://calistenia-sob-medida.semprenamoda.com.br',
   }
 ];
 
