@@ -1,0 +1,39 @@
+.section {
+  padding: var(--space-12) 0;
+  background-color: #f1f5f9; /* Slate 100 for subtle contrast against background */
+}
+
+.header {
+  margin-bottom: var(--space-8);
+  text-align: center;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+
+.subtitle {
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6);
+}
+
+.skillTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+  color: var(--text-main);
+}
+
+.skillDesc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}

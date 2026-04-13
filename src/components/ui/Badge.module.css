@@ -1,0 +1,28 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+}
+
+.default {
+  background-color: #f1f5f9;  /* Slate 100 */
+  color: var(--text-main);
+  border-color: #e2e8f0;      /* Slate 200 */
+}
+
+.accent {
+  background-color: var(--accent-primary);
+  color: #eff6ff; /* Blue 50 - High contrast */
+}
+
+.success {
+  background-color: var(--accent-secondary);
+  color: #f0fdf4; /* Green 50 - High Contrast */
+}
