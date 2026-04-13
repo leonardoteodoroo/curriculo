@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo Teodoro Laureano | Web Designer</title>
+    <meta name="description" content="Currículo-portfólio de Leonardo Teodoro Laureano para vagas de Web Designer, landing pages e presença digital.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --paper: #f1e7d7;
+            --paper-strong: #fffdf9;
+            --ink: #0f1f2d;
+            --ink-soft: #233549;
+            --line: rgba(15, 31, 45, 0.24);
+            --line-strong: rgba(15, 31, 45, 0.38);
+            --panel: rgba(255, 253, 249, 0.98);
+            --accent: #c24d1d;
+            --accent-deep: #7f2f0f;
+            --mint: #0f5d58;
+            --mint-deep: #0a4440;
+            --navy: #0e2238;
+            --shadow: 0 28px 72px rgba(15, 31, 45, 0.16);
+            --card-shadow-rest:
+                0 2px 0 rgba(255, 255, 255, 0.98) inset,
+                0 -4px 0 rgba(15, 31, 45, 0.06) inset,
+                0 3px 0 rgba(15, 31, 45, 0.05),
+                0 10px 16px rgba(15, 31, 45, 0.1),
+                0 22px 34px rgba(15, 31, 45, 0.14);
+            --card-shadow-hover:
+                0 2px 0 rgba(255, 255, 255, 0.98) inset,
+                0 -4px 0 rgba(15, 31, 45, 0.07) inset,
+                0 4px 0 rgba(15, 31, 45, 0.06),
+                0 14px 20px rgba(15, 31, 45, 0.12),
+                0 28px 40px rgba(15, 31, 45, 0.16);
+            --pill-shadow-light:
+                0 1px 0 rgba(255, 255, 255, 0.98) inset,
+                0 -3px 0 rgba(15, 31, 45, 0.05) inset,
+                0 2px 0 rgba(15, 31, 45, 0.05),
+                0 10px 16px rgba(15, 31, 45, 0.1);
+            --pill-shadow-light-hover:
+                0 1px 0 rgba(255, 255, 255, 0.98) inset,
+                0 -3px 0 rgba(15, 31, 45, 0.06) inset,
+                0 3px 0 rgba(15, 31, 45, 0.06),
+                0 14px 22px rgba(15, 31, 45, 0.13);
+            --pill-shadow-dark:
+                0 1px 0 rgba(255, 255, 255, 0.08) inset,
+                0 -3px 0 rgba(0, 0, 0, 0.18) inset,
+                0 3px 0 rgba(0, 0, 0, 0.22),
+                0 12px 20px rgba(15, 31, 45, 0.18);
+            --pill-shadow-dark-hover:
+                0 1px 0 rgba(255, 255, 255, 0.1) inset,
+                0 -3px 0 rgba(0, 0, 0, 0.2) inset,
+                0 4px 0 rgba(0, 0, 0, 0.24),
+                0 16px 26px rgba(15, 31, 45, 0.22);
+            --radius-xl: 28px;
+            --radius-lg: 22px;
+            --radius-md: 16px;
+            --content-width: 1180px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Manrope', sans-serif;
+            background:
+                radial-gradient(circle at top left, rgba(194, 77, 29, 0.14), transparent 26%),
+                radial-gradient(circle at top right, rgba(15, 93, 88, 0.12), transparent 22%),
+                linear-gradient(180deg, #f1e7d8 0%, #e4d6be 100%);
+            color: var(--ink);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(20, 32, 42, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(20, 32, 42, 0.03) 1px, transparent 1px);
+            background-size: 32px 32px;
+            mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9), transparent 82%);
+            pointer-events: none;
+            z-index: -2;
+        }
+
+        .skip-link {
+            position: absolute;
+            left: 20px;
+            top: -48px;
+            padding: 12px 16px;
+            background: var(--ink);
+            color: #fff;
+            border-radius: 12px;
+            text-decoration: none;
+            z-index: 10;
+        }
+
+        .skip-link:focus {
+            top: 20px;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .page-shell {
+            width: min(var(--content-width), calc(100% - 32px));
+            margin: 0 auto;
+            padding: 22px 0 40px;
+        }
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.88fr);
+            gap: 22px;
+            padding: 30px;
+            border: 1px solid var(--line-strong);
+            border-radius: var(--radius-xl);
+            background:
+                linear-gradient(140deg, rgba(255, 253, 248, 0.98), rgba(255, 245, 229, 0.94)),
+                radial-gradient(circle at bottom right, rgba(194, 77, 29, 0.18), transparent 28%);
+            box-shadow: var(--shadow);
+        }
+
+        .hero-main {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            grid-template-areas:
+                "copy"
+                "lede"
+                "actions";
+            gap: 16px;
+            align-items: start;
+            min-width: 0;
+        }
+
+        .hero-copy {
+            grid-area: copy;
+            display: grid;
+            gap: 12px;
+            min-width: 0;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            right: -60px;
+            bottom: -90px;
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(194, 77, 29, 0.24), rgba(194, 77, 29, 0));
+            pointer-events: none;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0 0 16px;
+            font-size: 0.86rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--accent-deep);
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 38px;
+            height: 1px;
+            background: currentColor;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+            line-height: 1.06;
+        }
+
+        h1 {
+            max-width: 8.8ch;
+            font-family: 'Fraunces', serif;
+            font-size: clamp(2.8rem, 6vw, 5rem);
+            letter-spacing: -0.04em;
+            line-height: 0.97;
+        }
+
+        .hero-lede {
+            grid-area: lede;
+            max-width: none;
+            margin: 0;
+            font-size: 1.04rem;
+            color: var(--ink-soft);
+        }
+
+        .hero-lede strong {
+            color: var(--ink);
+        }
+
+        .hero-proof {
+            flex: 1 1 300px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .hero-actions {
+            grid-area: actions;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 12px 16px;
+            margin-top: 0;
+        }
+
+        .proof-pill {
+            position: relative;
+            min-height: 42px;
+            padding: 10px 14px;
+            border: 1px solid var(--line-strong);
+            border-radius: 999px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(245, 237, 226, 0.98));
+            color: var(--ink);
+            font-size: 0.92rem;
+            font-weight: 800;
+            box-shadow: var(--pill-shadow-light);
+            transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+        }
+
+        .contact-list,
+        .stat-list,
+        .focus-list,
+        .detail-list,
+        .tool-list,
+        .tag-list,
+        .micro-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .contact-list {
+            flex: 1 1 360px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .contact-pill {
+            display: inline-flex;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 46px;
+            padding: 10px 16px 10px 12px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 999px;
+            background: rgba(15, 31, 45, 0.94);
+            color: rgba(248, 244, 238, 0.95);
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.24s ease, border-color 0.24s ease, background 0.24s ease, box-shadow 0.24s ease;
+            box-shadow: var(--pill-shadow-dark);
+        }
+
+        .contact-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            border-radius: 999px;
+            font-size: 0.82rem;
+            line-height: 1;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .contact-pill-location .contact-icon {
+            color: #ff9c7a;
+        }
+
+        .contact-pill-email .contact-icon {
+            color: #8ec7ff;
+        }
+
+        .contact-pill-phone .contact-icon {
+            color: #8de0d8;
+        }
+
+        .contact-list a:hover,
+        .contact-list a:focus-visible,
+        .contact-list .contact-pill:hover,
+        .contact-list .contact-pill:focus-visible {
+            transform: translateY(-2px);
+            border-color: rgba(255, 255, 255, 0.2);
+            background: rgba(21, 42, 63, 0.98);
+            box-shadow: var(--pill-shadow-dark-hover);
+        }
+
+        a:focus-visible,
+        button:focus-visible {
+            outline: 3px solid rgba(15, 93, 88, 0.35);
+            outline-offset: 3px;
+        }
+
+        .hero-panel {
+            position: relative;
+            align-self: start;
+            display: grid;
+            gap: 12px;
+            padding: 22px;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            border-radius: var(--radius-lg);
+            background:
+                linear-gradient(180deg, rgba(14, 34, 56, 0.98), rgba(11, 24, 40, 0.98)),
+                radial-gradient(circle at top right, rgba(15, 93, 88, 0.22), transparent 24%);
+            color: #f8f4ee;
+        }
+
+        .panel-label {
+            display: inline-block;
+            margin-bottom: 12px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.08);
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .hero-panel p {
+            margin: 0;
+            color: rgba(248, 244, 238, 0.92);
+        }
+
+        .stat-list {
+            display: grid;
+            gap: 12px;
+            margin-bottom: 0;
+        }
+
+        .stat-list li {
+            padding: 14px 16px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            font-weight: 600;
+        }
+
+        .availability {
+            margin-top: 4px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+            color: #fff;
+            font-weight: 700;
+        }
+
+        main {
+            display: grid;
+            gap: 18px;
+            margin-top: 18px;
+        }
+
+        .section-card {
+            padding: 26px;
+            border: 1px solid var(--line-strong);
+            border-radius: var(--radius-xl);
+            background: var(--panel);
+            box-shadow: var(--shadow);
+            animation: rise 0.7s ease both;
+        }
+
+        .section-header {
+            display: grid;
+            gap: 10px;
+            margin-bottom: 18px;
+        }
+
+        .kicker {
+            margin: 0;
+            font-size: 0.86rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--mint);
+        }
+
+        h2 {
+            font-family: 'Fraunces', serif;
+            font-size: clamp(1.9rem, 3vw, 2.8rem);
+            letter-spacing: -0.03em;
+        }
+
+        .section-note {
+            max-width: 65ch;
+            margin: 0;
+            color: var(--ink-soft);
+        }
+
+        .summary-grid,
+        .resume-grid,
+        .portfolio-grid,
+        .education-grid,
+        .closing-grid {
+            display: grid;
+            gap: 16px;
+            align-items: start;
+        }
+
+        .summary-grid {
+            grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.85fr);
+        }
+
+        .resume-grid,
+        .portfolio-grid,
+        .education-grid,
+        .closing-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .summary-copy p,
+        .summary-copy ul,
+        .summary-copy li,
+        .resume-card p,
+        .project-card p,
+        .education-card p,
+        .closing-card p {
+            color: var(--ink-soft);
+        }
+
+        .summary-copy p {
+            margin: 0 0 16px;
+        }
+
+        .focus-box,
+        .resume-card,
+        .project-card,
+        .education-card,
+        .closing-card {
+            position: relative;
+            isolation: isolate;
+            height: auto;
+            padding: 22px;
+            border: 1px solid var(--line-strong);
+            border-radius: var(--radius-lg);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(246, 238, 227, 0.98));
+            box-shadow: var(--card-shadow-rest);
+            transition: transform 0.24s ease, border-color 0.24s ease, background 0.24s ease, box-shadow 0.24s ease;
+        }
+
+        .focus-box {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(255, 244, 232, 0.99));
+        }
+
+        .focus-box::after,
+        .resume-card::after,
+        .project-card::after,
+        .education-card::after,
+        .closing-card::after,
+        .capability-card::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            pointer-events: none;
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.94),
+                inset 0 -1px 0 rgba(15, 31, 45, 0.04);
+        }
+
+        .focus-box h3,
+        .resume-card h3,
+        .project-card h3,
+        .education-card h3,
+        .closing-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+        }
+
+        .focus-list,
+        .detail-list,
+        .micro-list {
+            display: grid;
+            gap: 10px;
+        }
+
+        .focus-list li,
+        .detail-list li,
+        .micro-list li {
+            position: relative;
+            padding-left: 18px;
+        }
+
+        .focus-list li::before,
+        .detail-list li::before,
+        .micro-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.72em;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--accent);
+            transform: translateY(-50%);
+        }
+
+        .capability-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 12px;
+            align-items: start;
+        }
+
+        .capability-card {
+            position: relative;
+            isolation: isolate;
+            min-height: 170px;
+            padding: 18px;
+            border-radius: 20px;
+            border: 1px solid var(--line-strong);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(246, 238, 227, 0.98));
+            box-shadow: var(--card-shadow-rest);
+            transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease;
+        }
+
+        .capability-card h3 {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .capability-card p {
+            margin: 0;
+            color: var(--ink-soft);
+            font-size: 0.95rem;
+        }
+
+        .tool-list,
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tool-list li,
+        .tag-list li {
+            position: relative;
+            padding: 9px 12px;
+            border-radius: 999px;
+            border: 1px solid var(--line-strong);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(245, 237, 226, 0.98));
+            font-size: 0.92rem;
+            font-weight: 700;
+            box-shadow: var(--pill-shadow-light);
+            transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+        }
+
+        .project-card {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 18px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .project-card::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent), var(--mint));
+        }
+
+        .focus-box:hover,
+        .focus-box:focus-within,
+        .resume-card:hover,
+        .resume-card:focus-within,
+        .project-card:hover,
+        .project-card:focus-within,
+        .education-card:hover,
+        .education-card:focus-within,
+        .closing-card:hover,
+        .closing-card:focus-within,
+        .capability-card:hover,
+        .capability-card:focus-within {
+            transform: translateY(-4px);
+            box-shadow: var(--card-shadow-hover);
+            border-color: rgba(15, 31, 45, 0.44);
+        }
+
+        .proof-pill:hover,
+        .proof-pill:focus-visible,
+        .tool-list li:hover,
+        .tag-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--pill-shadow-light-hover);
+            border-color: rgba(15, 31, 45, 0.42);
+        }
+
+        .project-type {
+            display: inline-flex;
+            align-items: center;
+            align-self: start;
+            margin-bottom: 4px;
+            padding: 7px 10px;
+            border: 1px solid rgba(194, 77, 29, 0.16);
+            border-radius: 999px;
+            background: linear-gradient(180deg, rgba(194, 77, 29, 0.1), rgba(194, 77, 29, 0.04));
+            color: var(--accent-deep);
+            font-size: 0.84rem;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .project-body {
+            display: grid;
+            gap: 10px;
+        }
+
+        .project-body p {
+            margin: 0;
+            padding: 14px 15px;
+            border: 1px solid rgba(15, 31, 45, 0.08);
+            border-radius: 16px;
+            background:
+                linear-gradient(180deg, rgba(247, 241, 233, 0.98), rgba(255, 255, 255, 0.96)),
+                radial-gradient(circle at top left, rgba(15, 93, 88, 0.06), transparent 45%);
+            color: var(--ink-soft);
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.9),
+                0 10px 20px rgba(15, 31, 45, 0.08);
+        }
+
+        .project-meta {
+            margin-top: auto;
+            padding: 12px 14px;
+            border: 1px solid rgba(15, 93, 88, 0.14);
+            border-radius: 15px;
+            background: linear-gradient(180deg, rgba(15, 93, 88, 0.09), rgba(15, 93, 88, 0.04));
+            color: var(--ink);
+            font-size: 0.93rem;
+            font-weight: 700;
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.9),
+                0 10px 18px rgba(15, 31, 45, 0.08);
+        }
+
+        .resume-meta,
+        .education-meta {
+            margin-top: auto;
+            padding-top: 14px;
+            border-top: 1px solid var(--line);
+            color: var(--ink);
+            font-size: 0.93rem;
+            font-weight: 700;
+        }
+
+        .project-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            align-self: start;
+            min-height: 42px;
+            padding: 10px 14px;
+            border: 1px solid rgba(15, 93, 88, 0.18);
+            border-radius: 999px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(235, 247, 244, 0.98));
+            color: var(--mint-deep);
+            font-size: 0.94rem;
+            font-weight: 800;
+            box-shadow: var(--pill-shadow-light);
+            transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+        }
+
+        .project-cta::after {
+            content: "↗";
+            font-size: 1rem;
+        }
+
+        .project-card:hover .project-body p,
+        .project-card:focus-within .project-body p {
+            border-color: rgba(15, 31, 45, 0.14);
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.92),
+                0 12px 22px rgba(15, 31, 45, 0.08);
+        }
+
+        .project-card:hover .project-meta,
+        .project-card:focus-within .project-meta,
+        .project-card:hover .project-cta,
+        .project-card:focus-within .project-cta {
+            border-color: rgba(15, 93, 88, 0.28);
+            box-shadow: var(--pill-shadow-light-hover);
+        }
+
+        .resume-card .resume-role {
+            color: var(--accent-deep);
+            font-size: 0.84rem;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .closing-grid {
+            align-items: stretch;
+        }
+
+        .closing-card strong {
+            color: var(--ink);
+        }
+
+        footer {
+            padding: 18px 8px 0;
+            text-align: center;
+            color: var(--ink-soft);
+            font-size: 0.92rem;
+        }
+
+        @keyframes rise {
+            from {
+                opacity: 0;
+                transform: translateY(18px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 1080px) {
+            .hero,
+            .hero-main,
+            .summary-grid,
+            .capability-grid,
+            .resume-grid,
+            .portfolio-grid,
+            .education-grid,
+            .closing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                max-width: none;
+            }
+
+            .hero-main {
+                grid-template-areas:
+                    "copy"
+                    "photo"
+                    "lede"
+                    "actions";
+            }
+        }
+
+        @media (max-width: 720px) {
+            .page-shell {
+                width: min(var(--content-width), calc(100% - 20px));
+                padding-top: 10px;
+            }
+
+            .hero,
+            .section-card {
+                padding: 24px 18px;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .hero-proof {
+                flex-direction: column;
+            }
+
+            .contact-list {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .contact-list a,
+            .contact-chip {
+                width: 100%;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+
+        @media print {
+            @page {
+                size: A4;
+                margin: 1.2cm;
+            }
+
+            html,
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            body {
+                background: #fff;
+            }
+
+            body::before,
+            .skip-link {
+                display: none;
+            }
+
+            .page-shell {
+                width: 100%;
+                padding: 0;
+            }
+
+            body {
+                font-size: 11pt;
+            }
+
+            h1 {
+                font-size: 2.9rem;
+            }
+
+            h2 {
+                font-size: 1.9rem;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+                transform: none !important;
+                opacity: 1 !important;
+            }
+
+            main {
+                gap: 16px;
+                margin-top: 16px;
+            }
+
+            .hero,
+            .section-card,
+            .focus-box,
+            .resume-card,
+            .project-card,
+            .education-card,
+            .closing-card {
+                box-shadow: none;
+            }
+
+            .hero,
+            .section-card {
+                padding: 22px;
+            }
+
+            .project-card,
+            .resume-card,
+            .education-card,
+            .closing-card {
+                padding: 14px;
+            }
+
+            .summary-grid {
+                grid-template-columns: minmax(0, 1.15fr) minmax(250px, 0.85fr) !important;
+            }
+
+            .capability-grid,
+            .resume-grid,
+            .portfolio-grid,
+            .education-grid,
+            .closing-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+            }
+
+            .hero,
+            .section-card {
+                break-inside: auto;
+                page-break-inside: auto;
+            }
+
+            .project-card,
+            .resume-card,
+            .education-card,
+            .closing-card,
+            .focus-box,
+            .capability-card {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            .portfolio-grid,
+            .resume-grid,
+            .education-grid,
+            .closing-grid {
+                gap: 14px;
+            }
+
+            .capability-grid {
+                gap: 10px;
+            }
+
+            .section-header {
+                margin-bottom: 16px;
+            }
+
+            .hero-lede,
+            .section-note,
+            .project-card p,
+            .resume-card p,
+            .education-card p,
+            .closing-card p {
+                font-size: 0.96rem;
+            }
+
+            .project-type,
+            .resume-card .resume-role,
+            .kicker,
+            .eyebrow {
+                font-size: 0.74rem;
+            }
+
+            .project-cta,
+            .contact-pill {
+                font-size: 0.85rem;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+    <div class="page-shell">
+        <header class="hero" aria-labelledby="nome-profissional">
+            <div class="hero-main">
+                <div class="hero-copy">
+                    <p class="eyebrow">Currículo | Web Designer</p>
+                    <h1 id="nome-profissional">Leonardo Teodoro Laureano</h1>
+                </div>
+                <p class="hero-lede">
+                    Crio <strong>landing pages, páginas promocionais e apresentações web com hierarquia visual forte, contraste limpo e leitura orientada à ação</strong>.
+                    Minha atuação vai do briefing ao deploy final, unindo copywriting, organização de conteúdo e acabamento responsivo para entregar páginas mais claras,
+                    mais confiáveis e mais prontas para converter.
+                </p>
+                <div class="hero-actions">
+                    <ul class="hero-proof" aria-label="Destaques principais">
+                        <li class="proof-pill">8 projetos publicados</li>
+                        <li class="proof-pill">Do briefing ao deploy</li>
+                        <li class="proof-pill">Ajuste para desktop e mobile</li>
+                    </ul>
+                    <ul class="contact-list" aria-label="Informações de contato">
+                        <li>
+                            <span class="contact-pill contact-pill-location">
+                                <span class="contact-icon" aria-hidden="true">⌖</span>
+                                Goiânia, GO
+                            </span>
+                        </li>
+                        <li>
+                            <a class="contact-pill contact-pill-email" href="mailto:lauteodor@gmail.com">
+                                <span class="contact-icon" aria-hidden="true">✉</span>
+                                lauteodor@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact-pill contact-pill-phone" href="https://wa.me/5562999918702" target="_blank" rel="noopener noreferrer">
+                                <span class="contact-icon" aria-hidden="true">☏</span>
+                                (62) 99991-8702
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <aside class="hero-panel" aria-label="Resumo estratégico">
+                <span class="panel-label">Posicionamento</span>
+                <p>
+                    Perfil voltado para vagas de web design, páginas de venda, atualização visual de sites e apoio em experiências digitais de pequenos negócios e infoprodutos.
+                </p>
+                <ul class="stat-list">
+                    <li>8 projetos publicados com deploy em subdomínios customizados</li>
+                    <li>Copywriting aplicado ao layout, CTA, ordem de seções e leitura da página</li>
+                    <li>Base técnica em lógica, suporte e resolução estruturada de problemas</li>
+                </ul>
+                <p class="availability">Disponível para atuar com páginas institucionais, páginas promocionais e portfólio digital.</p>
+            </aside>
+        </header>
+
+        <main id="conteudo">
+            <section class="section-card" aria-labelledby="resumo-profissional">
+                <div class="section-header">
+                    <p class="kicker">Resumo</p>
+                    <h2 id="resumo-profissional">Resumo Profissional</h2>
+                    <p class="section-note">
+                        O objetivo desta versão é apresentar um currículo mais alinhado com recrutamento para Web Designer: foco em execução visual para web,
+                        clareza de proposta e portfólio real publicado.
+                    </p>
+                </div>
+
+                <div class="summary-grid">
+                    <div class="summary-copy">
+                        <p>
+                            Atuo na criação e adaptação de páginas web para produtos digitais, profissionais autônomos e marcas em crescimento.
+                            Minha entrega combina organização visual, leitura de oferta, estrutura de seções, cuidado com responsividade e publicação final.
+                        </p>
+                        <p>
+                            O diferencial é unir <strong>copywriting</strong> com critério visual: não penso apenas na aparência da página,
+                            mas em como o usuário percorre a informação, entende a proposta e encontra os pontos de ação.
+                        </p>
+                        <p>
+                            Minha trajetória anterior em suporte, operação, ensino e vendas fortalece comunicação, senso de prioridade,
+                            disciplina de execução e entendimento do que precisa funcionar de verdade no contato com cliente e público final.
+                        </p>
+                    </div>
+
+                    <div class="focus-box">
+                        <h3>O que entrego para a vaga</h3>
+                        <ul class="focus-list">
+                            <li>Landing pages e páginas promocionais com estrutura mais clara e leitura orientada à conversão.</li>
+                            <li>Organização de conteúdo, blocos visuais, destaques de benefícios, prova e chamada para ação.</li>
+                            <li>Ajustes para desktop e mobile com atenção a ritmo visual, espaçamento e contraste.</li>
+                            <li>Publicação de páginas e acompanhamento da versão final em domínio ou subdomínio.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-card" aria-labelledby="competencias-chave">
+                <div class="section-header">
+                    <p class="kicker">Competências</p>
+                    <h2 id="competencias-chave">Competências-Chave</h2>
+                    <p class="section-note">
+                        Competências apresentadas com foco no que é defensável para uma candidatura de web design e produção visual para web.
+                    </p>
+                </div>
+
+                <div class="capability-grid">
+                    <article class="capability-card">
+                        <h3>Web Design para Conversão</h3>
+                        <p>Estruturação de páginas com ordem de leitura, escaneabilidade, hierarquia visual e blocos de decisão.</p>
+                    </article>
+                    <article class="capability-card">
+                        <h3>Landing Pages e Vitrines Digitais</h3>
+                        <p>Criação e adaptação de páginas promocionais, páginas de captura, páginas de produto e apresentação de serviços.</p>
+                    </article>
+                    <article class="capability-card">
+                        <h3>Copywriting Aplicado ao Layout</h3>
+                        <p>Uso de título, subtítulo, CTA, prova e oferta em função do fluxo visual e da intenção comercial da página.</p>
+                    </article>
+                    <article class="capability-card">
+                        <h3>Execução e Publicação</h3>
+                        <p>Ajustes de conteúdo, refinamento de apresentação, verificação final e deploy em subdomínios customizados.</p>
+                    </article>
+                </div>
+
+                <div style="margin-top: 18px;">
+                    <ul class="tool-list" aria-label="Ferramentas e frentes de atuação">
+                        <li>Layout responsivo</li>
+                        <li>Organização de seções</li>
+                        <li>Páginas de venda</li>
+                        <li>Portfólio online</li>
+                        <li>Copy para web</li>
+                        <li>Revisão visual</li>
+                        <li>Publicação de páginas</li>
+                        <li>Leitura técnica de problemas</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section-card" aria-labelledby="portfolio-web">
+                <div class="section-header">
+                    <p class="kicker">Portfólio</p>
+                    <h2 id="portfolio-web">Projetos Web Publicados</h2>
+                    <p class="section-note">
+                        Os 8 projetos continuam listados abaixo com contexto de atuação e link direto para o site publicado, em uma apresentação mais limpa e mais adequada ao currículo.
+                    </p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <a class="project-card" href="http://advanced-amino-formula.semprenamoda.com.br" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Amino Advanced">
+                        <div class="project-body">
+                            <span class="project-type">Landing page | Produto digital</span>
+                            <h3>Amino Advanced</h3>
+                            <p>Página promocional com estrutura visual orientada a benefícios, apresentação da oferta e pontos de credibilidade.</p>
+                        </div>
+                        <div class="project-meta">Atuação: organização visual, leitura comercial e publicação.</div>
+                        <span class="project-cta">Abrir projeto ao vivo</span>
+                    </a>
+
+                    <a class="project-card" href="https://comolotarsuaagenda.semprenamoda.com.br" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Como Lotar Sua Agenda">
+                        <div class="project-body">
+                            <span class="project-type">Landing page | Serviço e captação</span>
+                            <h3>Como Lotar Sua Agenda</h3>
+                            <p>Página focada em comunicar proposta de valor, construir interesse e conduzir o visitante para uma ação principal.</p>
+                        </div>
+                        <div class="project-meta">Atuação: hierarquia de conteúdo, CTA e ajuste de apresentação.</div>
+                        <span class="project-cta">Abrir projeto ao vivo</span>
+                    </a>
+
+                    <a class="project-card" href="https://curso-nail-designer.semprenamoda.com.br" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Curso Nail Designer">
+                        <div class="project-body">
+                            <span class="project-type">Página de curso | Educação online</span>
+                            <h3>Curso Nail Designer</h3>
+                            <p>Página de apresentação para produto educacional com foco em clareza dos módulos, benefícios e incentivo à inscrição.</p>
+                        </div>
+                        <div class="project-meta">Atuação: distribuição visual da oferta e navegação por seções.</div>
+                        <span class="project-cta">Abrir projeto ao vivo</span>
+                    </a>
+
+                    <a class="project-card" href="https://calistenia-sob-medida.semprenamoda.com.br" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Calistenia Sob Medida">
+                        <div class="project-body">
+                            <span class="project-type">Página principal | Fitness digital</span>
+                            <h3>Calistenia Sob Medida</h3>
+                            <p>Projeto para comunicar programa digital com destaque de proposta, organização de informações e chamada para conversão.</p>
+                        </div>
+                        <div class="project-meta">Atuação: estrutura visual, destaque de seções e publicação.</div>
+                        <span class="project-cta">Abrir projeto ao vivo</span>
+                    </a>
+
+                    <a class="project-card" href="https://calistenia-sob-medida-28-dias.semprenamoda.com.br" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Entregavel Calistenia 28 dias">
+                        <div class="project-body">
+                            <span class="project-type">Página complementar | Entregável</span>
+                            <h3>Entregável Calistenia 28 Dias</h3>
+                            <p>Página de apoio para programa específico, com foco em objetividade, organização de informações e continuidade da experiência.</p>
+                        </div>
+                        <div class="project-meta">Atuação: refinamento visual e desdobramento de produto principal.</div>
+                        <span class="project-cta">Abrir projeto ao vivo</span>
+                    </a>
+
+                    <a class="project-card" href="https://laurapaula.semprenamoda.com.br" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Laura Paula">
+                        <div class="project-body">
+                            <span class="project-type">Presença digital | Marca pessoal</span>
+                            <h3>Laura Paula</h3>
+                            <p>Página de apresentação com foco em posicionamento, leitura simples e visual coerente para identidade individual.</p>
+                        </div>
+                        <div class="project-meta">Atuação: estrutura de apresentação e acabamento visual.</div>
+                        <span class="project-cta">Abrir projeto ao vivo</span>
+                    </a>
+
+                    <a class="project-card" href="https://aliciaties.semprenamoda.com.br" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Alicia's Ties">
+                        <div class="project-body">
+                            <span class="project-type">Site de marca | Showcase digital</span>
+                            <h3>Alicia's Ties</h3>
+                            <p>Projeto voltado para exposição de marca, reforço de identidade e apresentação mais polida de produto online.</p>
+                        </div>
+                        <div class="project-meta">Atuação: composição visual, organização de seções e deploy.</div>
+                        <span class="project-cta">Abrir projeto ao vivo</span>
+                    </a>
+
+                    <a class="project-card" href="https://verification.semprenamoda.com.br" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Kerassentials">
+                        <div class="project-body">
+                            <span class="project-type">Página de apoio | Verificação</span>
+                            <h3>Kerassentials</h3>
+                            <p>Página de apoio e verificação com proposta objetiva, estrutura enxuta e foco em confiabilidade da experiência.</p>
+                        </div>
+                        <div class="project-meta">Atuação: página funcional, clareza de fluxo e publicação.</div>
+                        <span class="project-cta">Abrir projeto ao vivo</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="section-card" aria-labelledby="historico-transferivel">
+                <div class="section-header">
+                    <p class="kicker">Histórico</p>
+                    <h2 id="historico-transferivel">Experiências Anteriores que Fortalecem a Atuação Digital</h2>
+                    <p class="section-note">
+                        A experiência anterior não foi descartada: ela foi reorganizada para mostrar repertório transferível para web design, atendimento de demanda e rotina de entrega.
+                    </p>
+                </div>
+
+                <div class="resume-grid">
+                    <article class="resume-card">
+                        <span class="resume-role">Suporte técnico e didática</span>
+                        <h3>SESI Jardim Planalto + BT Call Center</h3>
+                        <p>Atendimento a usuários, apoio técnico, explicação de conteúdos e tradução de problemas em orientação clara. Essa base ajuda na leitura de briefing e no cuidado com usabilidade.</p>
+                        <div class="resume-meta">Transferência para a vaga: comunicação clara, paciência técnica e resolução de problema.</div>
+                    </article>
+
+                    <article class="resume-card">
+                        <span class="resume-role">Operação e liderança</span>
+                        <h3>Rede Isaura + Metrobus + Yellow Soluções Mobilidade</h3>
+                        <p>Rotina intensa, conferências, acompanhamento de operação, disciplina de processo e senso de prioridade. Experiência útil para lidar com prazos, volume de demanda e consistência de entrega.</p>
+                        <div class="resume-meta">Transferência para a vaga: organização, ritmo de execução e confiabilidade.</div>
+                    </article>
+
+                    <article class="resume-card">
+                        <span class="resume-role">Comercial e leitura de público</span>
+                        <h3>FastShop Flamboyant</h3>
+                        <p>Vivência em vendas consultivas e contato direto com cliente. Ajuda a construir páginas mais orientadas a benefício, objeções e chamada para ação.</p>
+                        <div class="resume-meta">Transferência para a vaga: senso comercial e foco no que realmente convence.</div>
+                    </article>
+
+                    <article class="resume-card">
+                        <span class="resume-role">Controle e organização</span>
+                        <h3>COMDATA | Levantamento patrimonial</h3>
+                        <p>Atuação com conferência, classificação e organização de ativos em ambiente administrativo. Reforça atenção a detalhe, padronização e leitura estruturada de informação.</p>
+                        <div class="resume-meta">Transferência para a vaga: consistência, revisão cuidadosa e trabalho organizado.</div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section-card" aria-labelledby="formacao-e-bases">
+                <div class="section-header">
+                    <p class="kicker">Formação</p>
+                    <h2 id="formacao-e-bases">Formação e Bases Técnicas</h2>
+                    <p class="section-note">
+                        A formação acadêmica foi mantida com honestidade: ela agrega repertório técnico, mas o curso está trancado neste momento.
+                    </p>
+                </div>
+
+                <div class="education-grid">
+                    <article class="education-card">
+                        <h3>Engenharia da Computação | PUC Goiás</h3>
+                        <p>Formação cursada até o 7º período, atualmente com matrícula trancada. Base útil em lógica, pensamento estruturado e visão técnica para dialogar com projetos digitais.</p>
+                        <div class="education-meta">Status atual: curso trancado no momento.</div>
+                    </article>
+
+                    <article class="education-card">
+                        <h3>Cursos e repertório complementar</h3>
+                        <p>Ensino médio completo e cursos com certificado em métodos de pesquisa, língua portuguesa, inglês e comportamento com gestão de equipe.</p>
+                        <ul class="tag-list" aria-label="Cursos complementares" style="margin-top: 14px;">
+                            <li>Métodos de pesquisa</li>
+                            <li>Gestão de equipe</li>
+                            <li>Português</li>
+                            <li>Inglês instrumental</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section-card" aria-labelledby="encerramento-contato">
+                <div class="section-header">
+                    <p class="kicker">Contato</p>
+                    <h2 id="encerramento-contato">Disponibilidade para Vagas de Web Designer</h2>
+                    <p class="section-note">
+                        Fechamento mais direto para recrutador: o que você faz, que tipo de projeto consegue tocar e como entrar em contato.
+                    </p>
+                </div>
+
+                <div class="closing-grid">
+                    <article class="closing-card">
+                        <h3>Proposta de valor</h3>
+                        <p><strong>Web designer com repertório em copywriting e execução prática de páginas publicadas</strong>, capaz de organizar conteúdo, melhorar leitura visual e transformar produtos e serviços em presença digital mais clara.</p>
+                        <ul class="micro-list" style="margin-top: 14px;">
+                            <li>Foco em páginas promocionais, institucionais e de portfólio.</li>
+                            <li>Boa aderência para equipes enxutas, negócios digitais e produção de landing pages.</li>
+                            <li>Portfólio online com projetos reais já publicados.</li>
+                        </ul>
+                    </article>
+
+                    <article class="closing-card">
+                        <h3>Contato rápido</h3>
+                        <p>E-mail: <a href="mailto:lauteodor@gmail.com">lauteodor@gmail.com</a></p>
+                        <p>WhatsApp: <a href="https://wa.me/5562999918702" target="_blank" rel="noopener noreferrer">(62) 99991-8702</a></p>
+                        <p>Base: Goiânia, GO</p>
+                        <p style="margin-top: 16px;"><strong>Atualização:</strong> abril de 2026.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            Leonardo Teodoro Laureano | Currículo-portfólio para vagas de Web Designer
+        </footer>
+    </div>
+</body>
+</html>
