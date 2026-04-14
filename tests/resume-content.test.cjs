@@ -11,6 +11,10 @@ const showcase = fs.readFileSync(
   "src/components/sections/ProjectShowcase.tsx",
   "utf8",
 );
+const heroCss = fs.readFileSync(
+  "src/components/sections/Hero.module.css",
+  "utf8",
+);
 
 function includesAll(text, snippets) {
   for (const snippet of snippets) {
@@ -26,6 +30,19 @@ test("hero preserves core contact and candidate identity data", () => {
     "Jardim Goiás",
     "33 anos",
     "Web Designer",
+    "styles.identityHeader",
+    "styles.inlinePortraitWrap",
+  ]);
+});
+
+test("hero mobile styles keep portrait framing and title scale refined", () => {
+  includesAll(heroCss, [
+    "@media (max-width: 480px)",
+    "grid-template-columns: minmax(0, 1fr) 82px;",
+    "max-width: 82px;",
+    "object-position: center 10%;",
+    "font-size: clamp(1.92rem, 9.3vw, 2.76rem);",
+    "line-height: 0.94;",
   ]);
 });
 

@@ -22,7 +22,21 @@ export function Hero() {
               HTML · CSS · React · Landing Pages
             </span>
           </div>
-          <h1 className={styles.title}>Leonardo Teodoro Laureano</h1>
+
+          <div className={styles.identityHeader}>
+            <div className={styles.titleBlock}>
+              <h1 className={styles.title}>Leonardo Teodoro Laureano</h1>
+            </div>
+
+            <div className={styles.inlinePortraitWrap}>
+              <img
+                src={perfilImg}
+                alt="Leonardo Teodoro Laureano em foto de perfil profissional"
+                className={styles.inlinePortrait}
+                loading="eager"
+              />
+            </div>
+          </div>
 
           <p className={styles.subtitle}>
             Profissional em transição para Web Design, com formação técnica em
@@ -138,15 +152,6 @@ export function Hero() {
         </div>
 
         <aside className={styles.sidePanel}>
-          <div className={styles.photoWrapper}>
-            <img
-              src={perfilImg}
-              alt="Leonardo Teodoro Laureano em foto de perfil profissional"
-              className={styles.photo}
-              loading="eager"
-            />
-          </div>
-
           <div className={styles.summaryCard}>
             <span className={styles.summaryEyebrow}>Leitura rápida</span>
             <dl className={styles.summaryList}>
