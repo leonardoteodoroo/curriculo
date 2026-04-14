@@ -37,6 +37,20 @@ const SKILLS_TAGS = [
 
 const EXPERIENCE_DATA = [
   {
+    title: "Coordenador de Levantamento Patrimonial",
+    company: "CIA DE PROCESSAMENTO DE DADOS DO MUNICIPIO DE GOIANIA (COMDATA)",
+    period: "03/10/2023 - 31/12/2024",
+    description:
+      "Atuação administrativa com levantamento patrimonial, organização de ativos e conferência de informações no Paço Municipal.",
+  },
+  {
+    title: "Vendedor de Loja",
+    company: "FAST SHOP S.A",
+    period: "04/04/2022 - 24/09/2023",
+    description:
+      "Atendimento comercial e apresentação de produtos de tecnologia, com foco em comunicação clara e experiência de compra.",
+  },
+  {
     title: "Subgerente / Conferente",
     company: "Rede Isaura Supermercados",
     period: "2018 - 2021",
@@ -44,29 +58,18 @@ const EXPERIENCE_DATA = [
       "Responsável pela equipe de reposição, embalagem, açougue, padaria e caixas. Atuação com conferência de mercadorias, fechamento de caixa e fiscalização geral da loja.",
   },
   {
-    title: "Coordenador de Levantamento Patrimonial",
-    company: "COMDATA — Paço Municipal",
+    title: "Ajudante de Motorista",
+    company: "YELLOW SOLUCOES DE MOBILIDADE LTDA",
+    period: "2019 - 2020",
     description:
-      "Atuação administrativa com levantamento patrimonial, organização de ativos e conferência de informações no Paço Municipal.",
+      "Suporte operacional e logístico em campo, com foco em pontualidade, rotina dinâmica e execução prática.",
   },
   {
-    title: "Fiscal Operacional / Supervisor",
-    company: "Metrobus S/A",
+    title: "Auxiliar de escritorio em geral",
+    company: "METROBUS TRANSPORTE COLETIVO S/A",
+    period: "02/04/2015 - 30/04/2016",
     description:
-      "Fiscalização operacional em rotina de transporte público, com acompanhamento presencial de processos e suporte à operação.",
-  },
-  {
-    title: "Vendedor de Loja",
-    company: "FastShop Flamboyant",
-    description:
-      "Atendimento comercial e apresentação de produtos de tecnologia, com foco em comunicação clara e experiência de compra.",
-  },
-  {
-    title: "Agente de Atendimento Help Desk VIP / Back Office",
-    company: "Bt Call Center",
-    period: "2015 - 2017",
-    description:
-      "Suporte técnico e atendimento em ambiente de Help Desk VIP, com contato direto com usuários e rotinas de Back Office.",
+      "Atuação em rotinas administrativas e apoio à operação do transporte coletivo, com organização de informações e suporte geral ao setor.",
   },
   {
     title: "Professor de Informática, Matemática e Auxiliar Administrativo",
@@ -75,10 +78,11 @@ const EXPERIENCE_DATA = [
       "Atuação em sala de aula e no apoio administrativo da unidade, com organização de rotinas, documentos e suporte interno.",
   },
   {
-    title: "Ajudante de Motorista",
-    company: "YELLOW Soluções Mobilidade Ltda.",
+    title: "Operador de telemarketing ativo",
+    company: "BRASIL TELECOM CALL CENTER S/A - EM RECUPERACAO JUDICIAL",
+    period: "2010 - 2012",
     description:
-      "Suporte operacional e logístico em campo, com foco em pontualidade, rotina dinâmica e execução prática.",
+      "Experiência consolidada em atendimento ativo, comunicação direta com clientes, registro de informações e rotina de operação em call center.",
   },
 ];
 

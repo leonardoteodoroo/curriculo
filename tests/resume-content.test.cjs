@@ -36,24 +36,39 @@ test("experience section keeps original formation and background information", (
     "Programação em C++",
     "Word, PowerPoint, Excel",
     "Disponibilidade de horário",
-    "Bt Call Center",
-    "Metrobus",
-    "FastShop",
+    "CIA DE PROCESSAMENTO DE DADOS DO MUNICIPIO DE GOIANIA",
+    "FAST SHOP S.A",
+    "YELLOW SOLUCOES DE MOBILIDADE LTDA",
+    "METROBUS TRANSPORTE COLETIVO S/A",
+    "Auxiliar de escritorio em geral",
+    "BRASIL TELECOM CALL CENTER S/A - EM RECUPERACAO JUDICIAL",
+    "Operador de telemarketing ativo",
     "COMDATA",
-    "YELLOW",
     "SESI",
   ]);
+  assert.equal(experience.includes("ATENTO BRASIL S/A"), false);
+  assert.equal(experience.includes("LOJAS RIACHUELO"), false);
 });
 
-test("project showcase uses placeholders instead of real preview photos", () => {
+test("project showcase highlights live domains instead of placeholder previews", () => {
   includesAll(showcase, [
-    "placeholderLabel",
-    "Preview em atualização",
-    "Substituir screenshot",
+    "curriculo.semprenamoda.com.br",
+    "leonardoteodoroo/curriculo",
+    "curso-nail-designer.semprenamoda.com.br",
+    "aliciaties.semprenamoda.com.br",
+    "studioellas.semprenamoda.com.br",
+    "laurapaula.semprenamoda.com.br",
+    "advanced-amino-formula.semprenamoda.com.br",
+    "verification.semprenamoda.com.br",
+    "lpteste.semprenamoda.com.br",
+    "calistenia-sob-medida-28-dias.semprenamoda.com.br",
+    "Abrir dominio",
   ]);
+  assert.equal(showcase.includes("Preview em atualização"), false);
+  assert.equal(showcase.includes("Substituir screenshot"), false);
   assert.equal(
     showcase.includes("<img"),
     false,
-    "Expected placeholders instead of img tags",
+    "Expected text-based project cards instead of img tags",
   );
 });
