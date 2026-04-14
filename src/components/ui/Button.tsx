@@ -8,15 +8,26 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 }
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ children, variant = 'primary', isLoading = false, disabled, className = '', ...props }, ref) => {
-    
+  ({ children, variant = 'primary', isLoading = false, disabled, className = '', asChild = false, ...props }, ref) => {
+    const buttonClassName = `${styles.button} ${styles[variant]} ${className}`.trim();
+
+    if (asChild && React.isValidElement(children)) {
+      const child = children as React.ReactElement<{ className?: string }>;
+
+      return React.cloneElement(child, {
+        className: `${buttonClassName} ${child.props.className ?? ''}`.trim(),
+        'aria-busy': isLoading || undefined,
+        'aria-disabled': disabled || isLoading || undefined,
+      });
+    }
+
     return (
       <button
         ref={ref}
         disabled={disabled || isLoading}
         aria-busy={isLoading}
         aria-disabled={disabled || isLoading}
-        className={`${styles.button} ${styles[variant]} ${className}`.trim()}
+        className={buttonClassName}
         {...props}
       >
         {isLoading ? (

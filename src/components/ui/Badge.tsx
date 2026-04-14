@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Badge.module.css';
 
 interface BadgeProps extends React.HTMLAttributes<HTMLDivElement> {
-  variant?: 'default' | 'accent' | 'success';
+  variant?: 'default' | 'secondary' | 'accent' | 'success';
 }
 
 export function Badge({ className = '', variant = 'default', ...props }: BadgeProps) {

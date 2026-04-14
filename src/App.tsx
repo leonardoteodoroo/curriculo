@@ -8,13 +8,13 @@ function App() {
     <>
       <main>
         <Hero />
-        <Experience />
         <ProjectShowcase />
+        <Experience />
       </main>
-      
-      <footer style={{ textAlign: 'center', padding: 'var(--space-8) 0', color: 'var(--text-muted)' }}>
+
+      <footer className="siteFooter">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} Leonardo Teodoro. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Leonardo Teodoro Laureano. Currículo web direcionado a vaga de Web Designer.</p>
         </div>
       </footer>
     </>

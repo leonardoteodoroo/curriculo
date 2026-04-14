@@ -6,11 +6,15 @@
 
 body {
   font-family: 'Manrope', system-ui, -apple-system, sans-serif;
-  background-color: var(--bg-color);
+  background:
+    radial-gradient(circle at top left, rgba(143, 45, 31, 0.12), transparent 28%),
+    radial-gradient(circle at 85% 10%, rgba(15, 107, 99, 0.12), transparent 24%),
+    linear-gradient(180deg, #f8f1e8 0%, #f5eee6 100%);
   color: var(--text-main);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,7 +42,7 @@ img {
 /* Utilitários Básicos */
 .container {
   width: 100%;
-  max-width: 1400px; /* Largura total generosa para monitores grandes */
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 var(--space-6);
 }
@@ -57,5 +61,14 @@ img {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
-  border-width: 0;
+    border-width: 0;
+}
+
+.siteFooter {
+  text-align: center;
+  padding: var(--space-10) 0;
+  color: var(--text-muted);
+  border-top: 1px solid rgba(29, 27, 25, 0.08);
+  background: rgba(255, 253, 248, 0.55);
+  backdrop-filter: blur(6px);
 }

@@ -17,6 +17,12 @@
   border-color: #e2e8f0;      /* Slate 200 */
 }
 
+.secondary {
+  background-color: var(--surface-soft);
+  color: var(--text-main);
+  border-color: rgba(143, 45, 31, 0.12);
+}
+
 .accent {
   background-color: var(--accent-primary);
   color: #eff6ff; /* Blue 50 - High contrast */
