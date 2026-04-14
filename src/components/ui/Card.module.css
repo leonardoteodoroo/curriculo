@@ -4,7 +4,9 @@
   padding: var(--space-6);
   border: var(--border-subtle);
   box-shadow: var(--shadow-md);
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
   overflow: hidden;
   height: 100%;
   display: flex;

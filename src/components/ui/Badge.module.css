@@ -12,9 +12,9 @@
 }
 
 .default {
-  background-color: #f1f5f9;  /* Slate 100 */
+  background-color: #f1f5f9; /* Slate 100 */
   color: var(--text-main);
-  border-color: #e2e8f0;      /* Slate 200 */
+  border-color: #e2e8f0; /* Slate 200 */
 }
 
 .secondary {
